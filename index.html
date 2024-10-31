@@ -13,6 +13,9 @@
                 extend: {
                     colors: {
                         clifford: '#da373d',
+                        dgreen: '#ABEF5F',
+                        lgreen: '#abef5f80',
+                        hgreen: '#abef5f33'
                     }
                 }
             }
@@ -26,9 +29,9 @@
 <body>
     <!-- mnvbar -->
 
-    <nav>
-        <div class="navbar bg-base-100">
-            <div class="navbar-start">
+    <nav class="bg-base-100">
+        <div class="navbar ">
+            <div class=" navbar-start">
                 <div class="dropdown">
                     <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
@@ -48,10 +51,11 @@
                         <li><a href="">Contact Us</a></li>
                     </ul>
                 </div>
-                <a class="btn btn-ghost text-xl">Rinterio</a>
+                <a class="btn btn-ghost text-2xl font-bold"><i
+                        class="fa-solid bg-dgreen p-2 rounded-full -rotate-45 fa-arrow-right"></i>Rinterio</a>
             </div>
-            <div class="navbar-center hidden lg:flex">
-                <ul class="menu menu-horizontal px-1">
+            <div class="navbar-center hidden lg:flex justify-center items-center">
+                <ul class="menu text-xl menu-horizontal px-1">
                     <li><a>Home</a></li>
                     <li><a href="">Services</a>
 
@@ -62,31 +66,42 @@
 
                 </ul>
             </div>
-            <div class="navbar-end">
-                <i class="fa-solid fa-magnifying-glass"></i>
-                <i class="fa-solid fa-cart-shopping"></i>
+            <div class="navbar-end lg:flex overflow-hidden hidden">
+                <i class="fa-solid p-4  bg-base-100 rounded-full fa-magnifying-glass"></i>
+                <i class="fa-solid p-4 mx-2 bg-base-100 rounded-full fa-cart-shopping"></i>
 
-                <a class="btn">Book Consultant <i class="fa-solid fa-arrow-right"></i></a>
+                <a class="btn bg-dgreen text-xl rounded-full">Book Consultant <i
+                        class="fa-solid fa-arrow-right"></i></a>
             </div>
         </div>
     </nav>
-    <header>
+    <header class="bg-base-100">
         <div class="hero  min-h-screen">
             <div class="hero-content flex-col ">
                 <img src="assets/banner.png" class=" rounded-lg " />
-                <div>
-                    <h1 class="text-5xl font-bold">A barn house of this design has a
-                        striking appearance
-                        <h1>
-                            <p class="py-6">
-                                The barn house captivates with its blend of rustic charm and modern sophistication,
-                                featuring weathered wood, sleek metal
-                                accents, and large windows that flood the space with natural light.
-                            </p>
-                            <button class="btn  btn-primary">View Details</button>
+                <div class="flex justify-center">
+                    <div class="lg:w-2/3">
+                        <h1 class="text-3xl lg:5xl font-bold text-center ">A barn house of this design has a
+                            striking appearance
+                            <h1>
+                                <p class="py-6 text-center">
+                                    The barn house captivates with its blend of rustic charm and modern sophistication,
+                                    featuring weathered wood, sleek metal
+                                    accents, and large windows that flood the space with natural light.
+                                </p>
+                                <div class="flex justify-center">
+
+
+                                    <button class="btn btn-block lg:w-40 bg-lgreen font-bold  ">
+                                        <i
+                                            class="fa-solid bg-dgreen p-2 rounded-full -rotate-45 fa-arrow-right"></i>View
+                                        Details
+
+                                    </button>
+                                </div>
+                    </div>
                 </div>
             </div>
-        </div>
     </header>
 
     <main>
@@ -97,26 +112,28 @@ liveable spaces -->
 
 
                 <div class="hero  min-h-screen">
-                    <div class="hero-content flex-col lg:flex-row-reverse">
+                    <div class="hero-content flex-col lg:flex-row">
 
 
-                        <img src="assets/Rectangle.png" class="w-`1/2 rounded-lg shadow-2xl" />
+
 
                         <div>
-                            <div class="indicator w-[95%] mb-10  ">
-                                <span class="indicator-item indicator-start  "><img src="assets/Vector.png"
+                            <div class="lg:indicator hidden lg:block w-[95%] mb-10  ">
+                                <span class="lg:indicator-item  lg:indicator-start  "><img src="assets/Vector.png"
                                         alt=""></span>
                             </div>
-                            <button class="bg-base-100">About US</button>
-                            <h1 class="text-5xl font-bold">We design thoughtful,
+                            <div class="flex justify-center lg:justify-start">
+                            <button class=" btn btn-accent  border-none bg-base-100"><i
+                                    class="fa-solid fa-arrow-right"></i>About US</button></div>
+                            <h1 class="text-3xl lg:5xl font-bold text-center">We design thoughtful,
                                 liveable spaces</h1>
-                            <p class="py-6">
+                            <p class="py-6 text-center">
                                 The barn house captivates with its blend of rustic charm and
 
                                 modern sophistication, featuring weathered wood, sleek metal accents.
                             </p>
                             <div class="card card-side my-10 bg-base-100 shadow-xl">
-                                <figure>
+                                <figure class="ml-4">
                                     <img src="assets/commercial.png" alt="Movie" />
                                 </figure>
                                 <div class="card-body">
@@ -127,7 +144,7 @@ liveable spaces -->
                                 </div>
                             </div>
                             <div class="card card-side bg-base-100 shadow-xl">
-                                <figure>
+                                <figure class="ml-4">
                                     <img src="assets/residential.png" alt="Movie" />
                                 </figure>
                                 <div class="card-body">
@@ -139,39 +156,40 @@ liveable spaces -->
                             </div>
 
                         </div>
+                        <img src="assets/Rectangle.png" class="w-`1/2 rounded-lg shadow-2xl" />
                     </div>
                 </div>
 
             </div>
             <!-- stat sectoin -->
 
-            <div class=" flex justify-center">
-                <div class="  stats stats-vertical lg:stats-horizontal shadow">
+            <div class="  flex justify-center">
+                <div class=" w-[90%]  stats stats-vertical lg:stats-horizontal shadow">
                     <div class="stat">
                         <div class="stat-title flex justify-center text-4xl"><i class="fa-regular fa-comment-dots"></i>
                         </div>
-                        <div class="stat-value">235+</div>
-                        <div class="stat-desc">Happy Client Review</div>
+                        <div class="stat-value flex justify-center">235+</div>
+                        <div class="stat-desc flex justify-center">Happy Client Review</div>
                     </div>
 
                     <div class="stat">
                         <div class="stat-title flex justify-center text-4xl"><i class="fa-solid fa-building-user"></i>
                         </div>
-                        <div class="stat-value">50+</div>
-                        <div class="stat-desc">↗︎ Work Departments</div>
+                        <div class="stat-value flex justify-center">50+</div>
+                        <div class="stat-desc flex justify-center">↗︎ Work Departments</div>
                     </div>
 
                     <div class="stat">
                         <div class="stat-title flex justify-center text-4xl"><i
                                 class="fa-solid fa-users-viewfinder"></i></div>
-                        <div class="stat-value">350k</div>
-                        <div class="stat-desc">Our Happy Client</div>
+                        <div class="stat-value flex justify-center">350k</div>
+                        <div class="stat-desc flex justify-center">Our Happy Client</div>
                     </div>
                     <div class="stat">
                         <div class="stat-title flex justify-center text-4xl"><i class="fa-solid fa-user-group"></i>
                         </div>
-                        <div class="stat-value">307+</div>
-                        <div class="stat-desc">Staff Members+</div>
+                        <div class="stat-value flex justify-center">307+</div>
+                        <div class="stat-desc flex justify-center">Staff Members+</div>
                     </div>
                 </div>
             </div>
@@ -195,8 +213,8 @@ liveable spaces -->
 
                         <!-- card -->
 
-                        <div class="flex">
-                            <div class="card m-5 bg-[#E7C1D3] w-96 shadow-xl">
+                        <div class="flex flex-col lg:flex-row">
+                            <div class="card m-5 bg-[#E7C1D3] lg:w-96 shadow-xl">
                                 <div class="card-body">
                                     <h2 class="card-title"><img src="assets/concept.png" alt=""></h2>
                                     <h2 class="card-title">Concept</h2>
@@ -206,7 +224,7 @@ liveable spaces -->
 
                                 </div>
                             </div>
-                            <div class="card m-5 bg-[#EFDA6E] w-96 shadow-xl">
+                            <div class="card m-5 bg-[#EFDA6E] lg:w-96 shadow-xl">
                                 <div class="card-body">
                                     <h2 class="card-title"><img src="assets/flow-chart.png" alt=""></h2>
                                     <h2 class="card-title">Design Process</h2>
@@ -216,7 +234,7 @@ liveable spaces -->
 
                                 </div>
                             </div>
-                            <div class="card m-5 bg-[#A4DAC3] w-96 shadow-xl">
+                            <div class="card m-5 bg-[#A4DAC3] lg:w-96 shadow-xl">
                                 <div class="card-body">
                                     <h2 class="card-title"><img src="assets/vision.png" alt=""></h2>
                                     <h2 class="card-title">Supervision</h2>
@@ -226,7 +244,7 @@ liveable spaces -->
 
                                 </div>
                             </div>
-                            <div class="card m-5 bg-[#77AAEA] w-96 shadow-xl">
+                            <div class="card m-5 bg-[#77AAEA] lg:w-96 shadow-xl">
                                 <div class="card-body">
                                     <h2 class="card-title"><img src="assets/budget-planning.png" alt=""></h2>
                                     <h2 class="card-title">Budget Planning</h2>
@@ -266,13 +284,13 @@ liveable spaces -->
                     <div class="w-[90%]">
 
 
-                        <div class=" flex  ">
+                        <div class=" flex flex-col lg:flex-row  ">
                             <div
-                                class="card mr-4 h-60 card-side w-[70%] bg-base-100 shadow-xl border-solid border-2 rounded-lg  p-2 border-gray-500 border-opacity-50">
-                                <figure class="w-[40%]">
+                                class="hero-content my-2 flex-col lg:flex-row mr-4 lg:h-60 card-side w-full lg:w-[70%] bg-base-100 shadow-xl border-solid border-2 rounded-lg  p-2 border-gray-500 border-opacity-50">
+                                <figure class="lg:w-[40%]">
                                     <img class="w-full" src="assets/img1.png" alt="Movie" />
                                 </figure>
-                                <div class="card-body w-[50%] ">
+                                <div class="card-body lg:w-[50%] ">
                                     <h2 class="card-title">Commercial</h2>
                                     <p>The barn house captivates with its blend of rustic charm
                                         and modern. The barn house captivates with its blend of
@@ -283,7 +301,7 @@ liveable spaces -->
                                 </div>
                             </div>
 
-                            <div class=" h-60  w-[30%]  ">
+                            <div class=" lg:h-60 my-2  lg:w-[30%]  ">
 
 
                                 <img class="border-solid border-2 w-full rounded-lg  p-2 border-gray-500 border-opacity-50 "
@@ -291,8 +309,8 @@ liveable spaces -->
 
                             </div>
                         </div>
-                        <div class="flex my-4">
-                            <div class=" h-60 mr-4  w-[30%]  ">
+                        <div class="flex flex-col  lg:flex-row my-4">
+                            <div class=" lg:h-60 my-2 mr-4 w-full lg:w-[30%]  ">
 
 
                                 <img class="border-solid border-2 w-full rounded-lg  p-2 border-gray-500 border-opacity-50 "
@@ -300,11 +318,11 @@ liveable spaces -->
 
                             </div>
                             <div
-                                class="card mr-4 h-60 card-side w-[65%] bg-base-100 shadow-xl border-solid border-2 rounded-lg  p-2 border-gray-500 border-opacity-50">
-                                <figure class="w-[40%]">
+                                class="hero-content flex-col lg:flex-row my-2 lg:mr-4 lg:h-60 card-side lg:w-[65%] bg-base-100 shadow-xl border-solid border-2 rounded-lg  p-2 border-gray-500 border-opacity-50">
+                                <figure class="lg:w-[40%]">
                                     <img class="w-full" src="assets/img4.png" alt="Movie" />
                                 </figure>
-                                <div class="card-body w-[50%] ">
+                                <div class="card-body lg:w-[50%] ">
                                     <h2 class="card-title">Commercial</h2>
                                     <p>The barn house captivates with its blend of rustic charm
                                         and modern. The barn house captivates with its blend of
@@ -314,7 +332,7 @@ liveable spaces -->
                                     </div>
                                 </div>
                             </div>
-                            <div class=" h-60  w-[30%]  ">
+                            <div class=" lg:h-60 m-2 lg:w-[30%]  ">
 
 
                                 <img class="border-solid border-2 w-full rounded-lg  p-2 border-gray-500 border-opacity-50 "
@@ -329,6 +347,143 @@ liveable spaces -->
             </div>
         </section>
 
+        <!-- Read Our Articles and News -->
+        <section class="bg-base-200">
+            <div>
+                <div class="flex justify-center">
+                    <button>
+                        Rinterio News
+                    </button>
+                </div>
+                <h1 class="text-5xl text-center font-bold">Read Our Articles and News</h1>
+                <div class="flex justify-center">
+                    <p class="text-center w-1/2">
+                        The barn house captivates with its blend of rustic charm and modern sophistication,
+                        featuring weathered wood, sleek metal accents.
+                    </p>
+                </div>
+            </div>
+
+            <div class="flex justify-center">
+                <div class="flex flex-col lg:flex-row">
+                    <div class="card m-4 rounded-lg p-4 bg-base-100 lg:w-96 shadow-xl">
+                        <figure>
+                            <img src="assets/article1.png" alt="Shoes" />
+                        </figure>
+                        <div class="card-body">
+                            <div class="card-actions justify-start">
+                                <div class="badge "><i class="fa-solid fa-calendar-days"></i>July14, 2024</div>
+                                <div class="badge "><i class="fa-regular fa-circle-user"></i>By Admin</div>
+                            </div>
+                            <h2 class="  card-title text-2xl">
+                                How to choose the furniture
+                                right of your home.!
+
+                            </h2>
+                            <p>IfThe barn house captivates with its blend of
+                                rustic charm and modern. </p>
+                            <button>Read More</button>
+                        </div>
+                    </div>
+                    <div class="card m-4 p-4 bg-base-100 lg:w-96 shadow-xl">
+                        <figure>
+                            <img src="assets/article2.png" alt="Shoes" />
+                        </figure>
+                        <div class="card-body">
+                            <div class="card-actions justify-start">
+                                <div class="badge "><i class="fa-solid fa-calendar-days"></i>July14, 2024</div>
+                                <div class="badge "><i class="fa-regular fa-circle-user"></i>By Admin</div>
+                            </div>
+                            <h2 class="  card-title text-2xl">
+                                How to choose the furniture
+                                right of your home.!
+
+                            </h2>
+                            <p>IfThe barn house captivates with its blend of
+                                rustic charm and modern. </p>
+                            <button>Read More</button>
+                        </div>
+                    </div>
+                    <div class="card m-4 p-4 bg-base-100 lg:w-96 shadow-xl">
+                        <figure>
+                            <img src="assets/article3.png" alt="Shoes" />
+                        </figure>
+                        <div class="card-body">
+                            <div class="card-actions justify-start">
+                                <div class="badge "><i class="fa-solid fa-calendar-days"></i>July14, 2024</div>
+                                <div class="badge "><i class="fa-regular fa-circle-user"></i>By Admin</div>
+                            </div>
+                            <h2 class="  card-title text-2xl">
+                                How to choose the furniture
+                                right of your home.!
+
+                            </h2>
+                            <p>IfThe barn house captivates with its blend of
+                                rustic charm and modern. </p>
+                            <button>Read More</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="" style="background-image: url('assets/bg.jpg');">
+                <div>
+                    <div class="flex justify-center">
+                        <button>
+                            Let s Connect
+                        </button>
+                    </div>
+                    <h1 class=" text-5xl font-bold text-center">
+                        Let s Discuss Next Project
+                    </h1>
+                    <div class=" flex justify-center">
+                        <p class="w-1/2 text-center">
+                            The barn house captivates with its blend of rustic charm and modern sophistication,
+                            featuring weathered wood, sleek metal accents
+                        </p>
+                    </div>
+                </div>
+                <div class="flex justify-center">
+                    <form class="lg:w-[90%]" action="">
+                        <div class="lg:flex">
+                            <input class="w-full rounded-full my-2 lg:m-4 p-4" placeholder="First Name*" required type="text">
+                            <input class="w-full rounded-full my-2 lg:m-4 p-4" placeholder="Last Name*" required type="text"
+                                name="" id="">
+                        </div>
+                        <div class="lg:flex">
+                            <input class="w-full rounded-full my-2  lg:m-4 p-4" placeholder="Phone Number*" required
+                                type="text">
+                            <input class="w-full rounded-full my-2 lg:m-4 p-4" placeholder="Email Address*" required
+                                type="email" name="" id="">
+                        </div>
+                        <input class="w-full h-40 rounded-xl my-2 lg:m-4 p-4" placeholder="Write Your Massage Here"
+                            type="text">
+
+                        <input class="w-full h-40 rounded-xl my-2  lg:m-4 p-4" value="Send Mail" type="submit" name="" id="">
+                    </form>
+                </div>
+        </section>
+        <section>
+            <h1>
+                Rinterio
+            </h1>
+
+            <p>
+                The barn house captivates with its blend of rustic charm and modern sophistication,
+                featuring weathered wood, sleek metal accents.
+            </p>
+            <div class="flex">
+                <a href="">Home</a>
+                <a href="">Services</a>
+                <a href="">Portfolio</a>
+                <a href="">Blogs</a>
+                <a href="">Contact Us</a>
+            </div>
+            <button>
+                Book Consultant
+            </button>
+        </section>
     </main>
 </body>
 
